@@ -25,6 +25,8 @@ from django.views import generic
 
 class BookListView(generic.ListView):
 	model = Book
+	template_name = 'books_list.html'
 
 class BookDetailView(generic.DetailView):
     model = Book
+   
